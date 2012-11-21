@@ -1361,7 +1361,7 @@ if ($submit || $preview || $refresh)
 				'post_visibility'			=> (isset($post_data['post_visibility'])) ? $post_data['post_visibility'] : false,
 			);
 
-			$data['message'] .= showUserAgent($user); // MOZFR MOD
+			$data['message'] .= showUserAgent($user, $mode); // MOZFR MOD
 
 			if ($mode == 'edit')
 			{
