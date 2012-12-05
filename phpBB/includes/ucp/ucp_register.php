@@ -304,6 +304,10 @@ class ucp_register
 					$user_row['user_new'] = 1;
 				}
 
+				// Stop forum spam script
+				// XXX MOZFR MOD
+				include __DIR__ .'/stopforumspam.php';
+
 				// Register user...
 				$user_id = user_add($user_row, $cp_data);
 
