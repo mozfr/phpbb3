@@ -21,7 +21,7 @@ include($phpbb_root_path . 'common.' . $phpEx);
 include($phpbb_root_path . 'includes/functions_posting.' . $phpEx);
 include($phpbb_root_path . 'includes/functions_display.' . $phpEx);
 include($phpbb_root_path . 'includes/message_parser.' . $phpEx);
-include($phpbb_root_path . 'includes/mozfr_functions.' . $phpEx); // MOZFR MOD
+include($phpbb_root_path . 'includes/mozfr_functions.' . $phpEx); // MOZFRMOD
 
 
 // Start session management
@@ -1361,7 +1361,7 @@ if ($submit || $preview || $refresh)
 				'post_visibility'			=> (isset($post_data['post_visibility'])) ? $post_data['post_visibility'] : false,
 			);
 
-			$data['message'] .= showUserAgent($user, $mode); // MOZFR MOD
+			$data['message'] .= showUserAgent($user, $mode); // MOZFRMOD
 
 			if ($mode == 'edit')
 			{
